@@ -11,5 +11,5 @@ GIT cmd
 * 2eme tentitve avec git commit -a -m
 * 3eme tentative avec git add puis git commit, l'option -a *m ne prenant en compte que ce qui est déjà dans l'index du precedent commit, donc pas lses nouveaux fichiers non encore commités.
 
-Note destinée à l'auteur du cours
+Note destinée à l'auteur du cours  
 Bon cours, il faudrait ajouter sur les fins de chapitre un recap des commandes vues.
