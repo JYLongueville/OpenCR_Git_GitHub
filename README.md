@@ -26,19 +26,19 @@ git config --global user.email "votre@email.com"
 
 
 ### Commandes locales
-| Command       | Comment           | Cool  |
-| ------------- |:-------------:| -----:|
-| git init      | Active un dossier comme repository GIT <br>  Creer le dossier puis se placer dedans|  |
-| git add \<fichier> <br> git -a \<fichier> | Ajout du dossier dans l'index|   $12 |
-| git commit -m "message" | Enregistrement des modifications      |    $1 |
-| git commit -- amend -m "message" | Modification du message précédemment saisi  |    $1 |
-| git commit -a -m "message" | Ajoute à l'index et enregistre les modifications      |    $1 |
-| git status | Affiche l'état des fichiers du dossier non encore commités      |    $1 |
-| git log | Affiche l'hitorique des modifications enregistrées      |    $1 |
-| git checkout \<commitSHA> | Recharge l'etat de l'enregistrement associé au SHA  |    $1 |
-| git checkout master | Recharge le dernier enregistrement de la branche master  |    $1 |
-| git revert \<commitSHA>  | Recharge à l'état précédent l'enregistrement associé au SHA + commit (inscrit à l'historoique)le dernier enregistrement de la branche master  |    $1 |
-| git reset --hard  | Annule toute modification non encore enregistrée (commitée) |    $1 |
+| Command       | Comment           |
+| ------------- |:-------------:| 
+| git init      | Active un dossier comme repository GIT <br>  Creer le dossier puis se placer dedans|  
+| git add \<fichier> <br> git -a \<fichier> | Ajout du dossier dans l'index|   
+| git commit -m "message" | Enregistrement des modifications      |   
+| git commit -- amend -m "message" | Modification du message précédemment saisi  |   
+| git commit -a -m "message" | Ajoute à l'index et enregistre les modifications      |    
+| git status | Affiche l'état des fichiers du dossier non encore commités      |
+| git log | Affiche l'hitorique des modifications enregistrées      |    
+| git checkout \<commitSHA> | Recharge l'etat de l'enregistrement associé au SHA  |    
+| git checkout master | Recharge le dernier enregistrement de la branche master  |  
+| git revert \<commitSHA>  | Recharge à l'état précédent l'enregistrement associé au SHA + commit (inscrit à l'historoique)le dernier enregistrement de la branche master  |    
+| git reset --hard  | Annule toute modification non encore enregistrée (commitée) |    
 
 ### Commandes distantes
 | Command       | Comment      |
