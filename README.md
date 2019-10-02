@@ -14,3 +14,14 @@ GIT cmd
 
 Note destinée à l'auteur du cours  
 Bon cours, il faudrait ajouter sur les fins de chapitre un recap des commandes vues.
+
+## Antiseche
+### Installation
+Windows : https://msysgit.github.io/  
+Configuration de l'accés:
+```
+git config --global user.name "Votre nom ou pseudo"  
+git config --global user.email "votre@email.com"  
+```
+
+### Commandes
