@@ -26,10 +26,10 @@ git config --global user.email "votre@email.com"
 
 
 ### Commandes locales
-| Command       | Comment           |
-| ------------- |:-------------:| 
-| git init      | Active un dossier comme repository GIT <br>  Creer le dossier puis se placer dedans|  
-| git add \<fichier> <br> git -a \<fichier> | Ajout du dossier dans l'index|   
+| Command       | Comment       |
+| ------------- | ------------- |
+| git init      | Active un dossier comme repository GIT <br>  Creer le dossier puis se placer dedans |  
+| git add \<fichier> <br> git -a \<fichier> | Ajout du dossier dans l'index |   
 | git commit -m "message" | Enregistrement des modifications      |   
 | git commit -- amend -m "message" | Modification du message précédemment saisi  |   
 | git commit -a -m "message" | Ajoute à l'index et enregistre les modifications      |    
@@ -42,21 +42,31 @@ git config --global user.email "votre@email.com"
 
 ### Commandes distantes
 | Command       | Comment      |
-| ------------- |:-------------:|
-| git clone \<gitWebURL>      | Copie integrale du repository distant localement |
-| git push origin master      | remonte les modification enregistrées localement vers la branche master du repo distant |
-| git pull origin master      | descend  les modification enregistrées de la branche master du repo distant vers le systeme local |
+| ------------- | ------------ |
+| git clone \<gitWebURL> | Copie integrale du repository distant localement |
+| git push origin master | remonte les modification enregistrées localement vers la branche master du repo distant |
+| git pull origin master | descend  les modification enregistrées de la branche master du repo distant vers le systeme local |
 
 ### Commandes de branches
-| Command       | Comment      |
-| ------------- |:-------------:|
-| git branch \<nouvelleBranche>      | creation d'une nouvelle branche localement |
-| git branch      | Liste les branches (* devant la branche active) |
-| git checkout \<uneBranche>      | Position sur une branche, au dernier enregistrement |
+| Command       | Comment       |
+| ------------- | ------------- |
+| git branch \<nouvelleBranche> | creation d'une nouvelle branche localement |
+| git branch                    | Liste les branches (* devant la branche active) |
+| git checkout \<uneBranche>    | Position sur une branche, au dernier enregistrement |
 | git checkout -b \<nouvelleBranche>      | creation d'une nouvelle branche et positionement dessus |
-| git merge \<brancheCible>      | Fusion de la branche cible sur la branche courante |
+| git merge \<brancheCible>     | Fusion de la branche cible sur la branche courante |
+| git blame \<fichierAAnlyser>  | Liste les modification faites sur chaque ligne du fichier: SHA, auteur, date |
+| git show \<SHAaAnalyser>      | Detail du commit |
+| git stash                     | Stocke et met de coté les modifications en cours |
+| git stash pop                 | Réactive les modifications mises de coté et vide le stash |
+| git stash apply               | Réactive les modifications mises de coté sans vider le stash |
+
 
 NB: si le merge genere un conflit:
 * editer le fichier poure resoudre les conflits
 * git add  \<leFichierMergéCorrigé>
 * git commit (sans commentaire)
+
+### Exceptions
+Fichier .gitignore : contient la liste des fichiers à ignorer (chemain complet depuis la racine du repository)
+(il doit être ajouté à l'index pour etre géré dans Git)
